@@ -3,11 +3,11 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p><BlankNode/> is the tendency of many animals to help other animals, even to their own detriment. This creates a conflict with <BlankNode/>, where it suggests that animals live in a state of constant competition. <var/>  <var/>  </p>
+      <p><BlankNode/> <var/> is the tendency of many animals to help other animals, even to their own detriment. This creates a conflict with <BlankNode/><var/>, where it suggests that animals live in a state of constant competition.    </p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*altruism\s*$">
+        <condition string="^\s*[Aa]ltruism\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
@@ -19,7 +19,7 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*natural\s+selection\s*$">
+        <condition string="^\s*[Nn]atural\s+[Ss]election\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
