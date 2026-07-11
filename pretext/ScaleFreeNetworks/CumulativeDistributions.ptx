@@ -42,7 +42,7 @@ cdf_fb = Cdf(degrees(fb), label='Facebook')</pre>
   <p>The <term>complementary CDF</term> (CCDF) is defined</p>
 
 <p>
-  <md>
+  <md xml:id="eqn-ccdf">
     \text{CCDF}(x) \equiv 1 - \text{CDF}(x)
   </md>
 </p>
