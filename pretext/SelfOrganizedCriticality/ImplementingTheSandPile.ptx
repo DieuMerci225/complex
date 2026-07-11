@@ -83,17 +83,17 @@ pile.run()</pre>
     </statement>
     <setup>
       <var>
-        <condition number="[332, 332]">
+        <condition number="332" tolerance="0.5">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition number="[200, 200]">
+        <condition number="200" tolerance="0.5">
           <feedback>
             <p>Sorry, This is pile is not yet at equalibrium.</p>
           </feedback>
         </condition>
-        <condition number="[400, 400]">
+        <condition number="400" tolerance="0.5">
           <feedback>
             <p>Sorry, This pile has not change for a while.</p>
           </feedback>
