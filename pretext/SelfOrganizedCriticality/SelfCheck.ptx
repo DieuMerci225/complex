@@ -109,16 +109,16 @@
   </exercise>
   <exercise>
     <statement>
-      <p>The <BlankNode/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/> cause is the structe and dynamics of the systems as a whole. <var/>  <var/>  </p>
+      <p>The <BlankNode/><var/> cause of an avalanch in a sand pile is a grain of sand and the <BlankNode/><var/>  cause is the structe and dynamics of the systems as a whole.</p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*proximate\s*$">
+        <condition string="^\s*[Pp]roximate\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*ultimate\s*$">
+        <condition string="^\s*[Uu]ltimate\s*$">
           <feedback>
             <p>Incorrect, the ultimate cause is the structure and dynamics as a whole.</p>
           </feedback>
@@ -130,12 +130,12 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*ultimate\s*$">
+        <condition string="^\s*[Uu]ltimate\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*proximate\s*$">
+        <condition string="^\s*[Pp]roximate\s*$">
           <feedback>
             <p>Incorrect, the proximate cause is the grain of sand that starts the avalanche.</p>
           </feedback>
