@@ -160,7 +160,7 @@ main()
   </exercise>
   <subsection xml:id="algorithm-analysis_some-needed-math-notation">
     <title>Some Needed Math Notation</title>
-    <p>This is the sigma symbol: <md>\sum_{}</md>.
+    <p>This is the sigma symbol: <md>\sum_{}</md>
                 It tells us that we are summing up something
                 much like a mathematical loop typically with a counter.</p>
     <p>If we have
