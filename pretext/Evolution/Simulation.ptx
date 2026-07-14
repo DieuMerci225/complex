@@ -87,10 +87,10 @@
       </choice>
     </choices>
   </exercise>
+
   <exercise label="CH12_5_Q2">
     <statement>
-      <p>
-</p>
+      <p>Drag the term on the left to its corresponding definition.</p>
     </statement>
     <matches>
       <match order="1">
@@ -102,7 +102,7 @@
         <response> An array of Agent objects.</response>
       </match>
       <match order="3">
-        <premise>git_fitnesses</premise>
+        <premise>get_fitnesses</premise>
         <response>Returns an array containing the fitness of each agent.</response>
       </match>
       <match order="4">
