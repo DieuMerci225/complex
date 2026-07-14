@@ -32,7 +32,7 @@
   <p>In the exercises at the end of this chapter, you can explore other models intended to capture all of these characteristics.</p>
   <figure align="center" xml:id="sfn-fig-tbl-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Table 6.1: Characteristics of the Facebook dataset compared to two models.</caption>
-    <image source="ScaleFreeNetworks/Figures/table1.PNG" width="50%" alt="&quot;Table 6.1: Characteristics of the Facebook dataset compared to two models.&quot;"/>
+    <image source="ScaleFreeNetworks/Figures/Table1.PNG" width="50%" alt="&quot;Table 6.1: Characteristics of the Facebook dataset compared to two models.&quot;"/>
   </figure>
   <exercise>
     <statement>
