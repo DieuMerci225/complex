@@ -6,11 +6,37 @@
   <p>The rules that determine how the system evolves in time are based on the notion of a <q>neighborhood</q>, which is the set of cells that determines the next state of a given cell. Wolfram's experiments use a 3-cell neighborhood: the cell itself and its two neighbors.</p>
   <p>In these experiments, the cells have two states, denoted as 0 and 1 or <q>off</q> and <q>on</q>. A rule can be summarized by a table that maps from the state of the neighborhood (a tuple of three states) to the next state of the center cell. The following table shows an example:</p>
 
-  <figure align="center" >
-    <image source="CellularAutomatons/Figures/Table.png" width="50%"/>
-  </figure>
+
+<table xml:id="cellular-automatons_wolfram-rule50-table">
+  <title>Transition Rules for Elementary Cellular Automaton Rule 50</title>
+  <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+    <row bottom="medium">
+      <cell right="medium">prev</cell>
+      <cell>111</cell>
+      <cell>110</cell>
+      <cell>101</cell>
+      <cell>100</cell>
+      <cell>011</cell>
+      <cell>010</cell>
+      <cell>001</cell>
+      <cell>000</cell>
+    </row>
+    <row>
+      <cell right="medium">next</cell>
+      <cell>0</cell>
+      <cell>0</cell>
+      <cell>1</cell>
+      <cell>1</cell>
+      <cell>0</cell>
+      <cell>0</cell>
+      <cell>1</cell>
+      <cell>0</cell>
+    </row>
+  </tabular>
+</table>
 
   <p xml:id="ca-fig-1" names="ca_fig_1">The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA <q>Rule 50</q>.</p>
+
   <figure align="center" xml:id="cellular-automatons_wolfram-rule50-figure">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 50 after 10 time steps</caption>
     <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%" alt="&quot; Rule 50 after 10 time steps&quot;"/>
