@@ -114,48 +114,57 @@
   <figure align="center">
     <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%"/>
   </figure>
+
   <exercise>
     <statement>
-      <p>Fill in the blank with the correct Game of Life pattern: <var/>  </p>
+      <p>Fill in the blank with the correct Game of Life pattern:  </p>
+
+      <p>A <BlankNode/><var/> is a pattern that oscillates and alternates between two states.</p>
     </statement>
     <setup>
       <var>
-        <p>A <BlankNode/> is a pattern that oscillates and alternates between two states.</p>
-        <condition string="^\s*toad\s*$">
+        <condition string="^\s*[Tt]oad\s*$">
           <feedback>
             <p>Correct.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Glider\s*$">
+        <condition string="^\s*[Gg]lider\s*$">
           <feedback>
             <p>Incorrect, a glider is a pattern that is back in its starting position after four steps but shifted down and to the right.</p>
           </feedback>
         </condition>
-        <condition string="^\s*R-Pentomino\s*$">
+        <condition string="^\s*[Rr]-[Pp]entomino\s*$">
           <feedback>
             <p>Incorrect,  a r-pentomino is one of the simplest patterns that fall under the methuselahs classification of patterns. Methuselahs are patterns that are long lived and have simple starting positions.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Puffer\s+Train\s*$">
+        <condition string="^\s*[Pp]uffer\s+[Tt]rain\s*$">
           <feedback>
             <p>Incorrect, a puffer train is a translating pattern that leaves live cells in its wake.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Gospers\s+Gun\s*$">
+        <condition string="^\s*[Gg]ospers\s+[Gg]un\s*$">
           <feedback>
             <p>Incorrect, gospers gun is a pattern that will peridically produce a spaceship.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Spaceship\s*$">
+        <condition string="^\s*[Ss]paceship\s*$">
           <feedback>
             <p>Incorrect, a spaceship is a pattern that will oscillate and it will return to its starting position but shifted in space.</p>
           </feedback>
         </condition>
-        <condition string="^\s*Beehive\s*$">
+        <condition string="^\s*[Bb]eehive\s*$">
           <feedback>
             <p>Incorrect, a beehive is a stable pattern that has two or three neighbors.</p>
           </feedback>
         </condition>
+
+        <condition string=".*">
+        <feedback>
+          <p>Incorrect. That is not the correct Game of Life pattern.</p>
+        </feedback>
+      </condition>
+      
       </var>
     </setup>
   </exercise>
