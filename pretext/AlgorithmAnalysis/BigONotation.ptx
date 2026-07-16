@@ -120,7 +120,7 @@
             and over as you study algorithms. These are shown in <xref ref="algorithm-analysis_table_common_big_o_functions"/>. In
             order to decide which of these functions is the dominant part of any
             <m>T(n)</m> function, we must see how they compare with one another
-            as <m>n</e> gets large.</p>
+            as <m>n</m> gets large.</p>
 
   <table xml:id="algorithm-analysis_table_common_big_o_functions">
   <title>
