@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_randomness">
   <title>Randomness</title>
-<figure align="center" xml:id="ca-fig-3">
+<figure align="center" xml:id="cellular-automatons_rule30-figure">
   <caption>Rule 30 after 100 time steps.</caption>
   <image source="CellularAutomatons/Figures/thinkcomplexity2018.png" width="50%">
     <shortdescription>An irregular, seemingly random triangular pattern with no visible repeating structure.</shortdescription>
@@ -12,7 +12,7 @@
     </description>
   </image>
 </figure>
-  <p>Class 3 contains CAs that generate randomness. Rule 30 is an example; <xref ref="ca-fig-3"/> shows what it looks like after 100 time steps.</p>
+  <p>Class 3 contains CAs that generate randomness. Rule 30 is an example; <xref ref="cellular-automatons_rule30-figure"/> shows what it looks like after 100 time steps.</p>
   <p>Along the left side there is an apparent pattern, and on the right side there are triangles in various sizes, but the center seems quite random. In fact, if you take the center column and treat it as a sequence of bits, it is hard to distinguish from a truly random sequence. It passes many of the statistical tests people use to test whether a sequence of bits is random.</p>
   <p>Programs that produce random-seeming numbers are called <idx>pseudo-random number generators</idx><term>pseudo-random number generators</term> (PRNGs). They are not considered truly random because:</p>
   <blockquote>

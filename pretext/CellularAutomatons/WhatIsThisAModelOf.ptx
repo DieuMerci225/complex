@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="ca-fig-6">
   <title>What is this a Model of?</title>
-<figure align="center" xml:id="WhatIsThisAModelOf_figure_1">
+<figure align="center" xml:id="cellular-automatons_model-structure-figure">
   <caption>The logical structure of a simple physical model.</caption>
   <image source="CellularAutomatons/Figures/thinkcomplexity2021.png" width="50%">
     <shortdescription>A diagram showing the relationships between System, Observable, Model, and Behavior, connected by abstraction, observation, analogy, and derivation.</shortdescription>
