@@ -1,15 +1,22 @@
 <?xml version="1.0"?>
 <section xml:id="cellular-automatons_classifying-cas">
   <title>Classifying CAs</title>
-  <figure align="center" xml:id="ca-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 18 after 64 steps.</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%" alt="&quot; Rule 18 after 64 steps.&quot;"/>
-  </figure>
+<figure align="center" xml:id="cellular-automatons_rule18-figure">
+  <caption>Rule 18 after 64 steps.</caption>
+  <image source="CellularAutomatons/Figures/thinkcomplexity2017.png" width="50%">
+    <shortdescription>A fractal-like triangular pattern with nested, self-similar triangular gaps.</shortdescription>
+    <description>
+      <p>
+        The image shows a 1-D cellular automaton evolving under Rule 18 over 64 time steps, stacked into a two-dimensional grid. The pattern forms a large triangle made up of smaller triangles at every scale, each containing empty (light) triangular regions nested inside solid (dark) triangular regions. This self-similar, nested structure repeats at progressively finer scales, giving the overall shape a fractal appearance similar to a Sierpinski triangle.
+      </p>
+    </description>
+  </image>
+</figure>
   <p>How many of these CAs are there?</p>
   <p>Since each cell is either on or off, we can specify the state of a cell with a single bit. In a neighborhood with three cells, there are 8 possible configurations, so there are 8 entries in the rule tables. And since each entry contains a single bit, we can specify a table using 8 bits. With 8 bits, we can specify 256 different rules.</p>
   <p>One of Wolfram's first experiments with CAs was to test all 256 possibilities and classify them.</p>
   <p>Examining the results visually, he proposed that the behavior of CAs can be grouped into four classes. Class 1 contains the simplest (and least interesting) CAs, the ones that evolve from almost any starting condition to the same uniform pattern. As a trivial example, Rule 0 always generates an empty pattern after one time step.</p>
-  <p>Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; <xref ref="ca-fig-2"/> shows what it looks like after 64 steps.</p>
+  <p>Rule 50 is an example of Class 2. It generates a simple pattern with nested structure, that is, a pattern that contains many smaller versions of itself. Rule 18 makes the nested structure even clearer; <xref ref="cellular-automatons_rule18-figure"/> shows what it looks like after 64 steps.</p>
   <p>Some Class 2 CAs generate patterns that are intricate and pretty, but compared to Classes 3 and 4, they are relatively simple.</p>
   <exercise>
     <statement>

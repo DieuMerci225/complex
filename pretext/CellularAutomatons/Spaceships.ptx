@@ -1,21 +1,35 @@
 <?xml version="1.0"?>
 <section xml:id="ca-fig-4">
   <title>Spaceships</title>
-  <figure align="center" xml:id="fig-tc-reference">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 110 after 100 time steps.</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2019.png" width="50%" alt="&quot; Rule 110 after 100 time steps.&quot;"/>
-  </figure>
+<figure align="center" xml:id="cellular-automatons_rule110-figure">
+  <caption>Rule 110 after 100 time steps.</caption>
+  <image source="CellularAutomatons/Figures/thinkcomplexity2019.png" width="50%">
+    <shortdescription>An asymmetric, irregular triangular pattern growing diagonally toward one side, filling only the left half of the grid.</shortdescription>
+    <description>
+      <p>
+        The image shows a 1-D cellular automaton evolving under Rule 110 over 100 time steps, stacked into a two-dimensional grid. Unlike Rule 30 or Rule 50, this pattern is not centered or symmetric; it grows diagonally from the top-left corner, with the boundary between the chaotic, textured region and the empty (light) region sloping from upper-left to lower-right. The dark region occupies roughly the left half of the grid by the final row, containing a mix of irregular, fractal-like structures with small triangular gaps of varying sizes.
+      </p>
+    </description>
+  </image>
+</figure>
 
   <p xml:id="ca-fig-5" names="ca_fig_5">The behavior of Class 4 CAs is even more surprising. Several 1-D CAs, most notably Rule 110, are <idx>Turing complete</idx><term>Turing complete</term>, which means that they can compute any computable function. This property, also called <idx>universality</idx><term>universality</term>, was proved by Matthew Cook in 1998.</p>
 
-  <p><xref ref="fig-tc-reference"/> shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.</p>
-  <p><xref ref="Spaceships_figure_2"/> shows a bigger picture, starting with a random initial condition and 600 time steps:</p>
+  <p><xref ref="cellular-automatons_rule110-figure"/> shows what Rule 110 looks like with an initial condition of a single cell and 100 time steps. At this time scale it is not apparent that anything special is going on. There are some regular patterns but also some features that are hard to characterize.</p>
+  <p><xref ref="cellular-automatons_rule110-random-figure"/> shows a bigger picture, starting with a random initial condition and 600 time steps:</p>
 
 
-  <figure align="center" xml:id="Spaceships_figure_2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 110 with random initial conditions and 600 time steps.</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2020.png" width="50%" alt="&quot; Rule 110 with random initial conditions and 600 time steps.&quot;"/>
-  </figure>
+<figure align="center" xml:id="cellular-automatons_rule110-random-figure">
+  <caption>Rule 110 with random initial conditions and 600 time steps.</caption>
+  <image source="CellularAutomatons/Figures/thinkcomplexity2020.png" width="50%">
+    <shortdescription>A dense field of vertical, streak-like patterns with scattered white specks, showing structures that persist and drift over time.</shortdescription>
+    <description>
+      <p>
+        The image shows a 1-D cellular automaton evolving under Rule 110 from a random initial configuration over 600 time steps, stacked into a two-dimensional grid. Unlike the earlier Rule 110 figure starting from a single cell, this pattern fills the entire grid with a dense, mostly uniform textured background. Running vertically through the image are several distinct streak-like bands and diagonal trails, some nearly straight and others drifting slightly left or right as time progresses, standing out against the finer background texture. Scattered white specks (isolated "off" cells) also appear throughout the pattern.
+      </p>
+    </description>
+  </image>
+</figure>
   <p>After about 100 steps the background settles into a simple repeating pattern, but there are a number of persistent structures that appear as disturbances in the background. Some of these structures are stable, so they appear as vertical lines. Others translate in space, appearing as diagonals with different slopes, depending on how many time steps they take to shift by one column. These structures are called spaceships.</p>
   <p>Collisions between spaceships yield different results depending on the types of the spaceships and the phase they are in when they collide. Some collisions annihilate both ships; others leave one ship unchanged; still others yield one or more ships of different types.</p>
   <p>These collisions are the basis of computation in a Rule 110 CA. If you think of spaceships as signals that propagate through space, and collisions as gates that compute logical operations like AND and OR, you can see what it means for a CA to perform a computation.</p>
