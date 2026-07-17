@@ -37,10 +37,17 @@
 
   <p xml:id="ca-fig-1" names="ca_fig_1">The first row shows the eight states a neighborhood can be in. The second row shows the state of the center cell during the next time step. As a concise encoding of this table, Wolfram suggested reading the bottom row as a binary number; because 00110010 in binary is 50 in decimal, Wolfram calls this CA <q>Rule 50</q>.</p>
 
-  <figure align="center" xml:id="cellular-automatons_wolfram-rule50-figure">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Rule 50 after 10 time steps</caption>
-    <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%" alt="&quot; Rule 50 after 10 time steps&quot;"/>
-  </figure>
+<figure align="center" xml:id="cellular-automatons_wolfram-rule50-figure">
+  <caption>Rule 50 after 10 time steps</caption>
+  <image source="CellularAutomatons/Figures/thinkcomplexity2016.png" width="50%">
+    <shortdescription>A symmetric triangular pattern of black and white cells growing outward from a single center cell.</shortdescription>
+    <description>
+      <p>
+        The image shows a 1-D cellular automaton evolving under Rule 50 over 10 time steps, with each row stacked below the previous one to form a two-dimensional grid. The top row contains a single "on" (dark) cell in the center, with all other cells "off" (white). With each subsequent row, the pattern of on cells widens outward symmetrically from the center, forming a checkerboard-like triangular shape that spreads two cells wider (one on each side) per time step, producing a solid triangle silhouette by the tenth row.
+      </p>
+    </description>
+  </image>
+</figure>
 
   <p><xref ref="cellular-automatons_wolfram-rule50-figure"/> shows the effect of Rule 50 over 10 time steps. The first row shows the state of the system during the first time step; it starts with one cell <q>on</q> and the rest <q>off</q>. The second row shows the state of the system during the next time step, and so on.</p>
   
