@@ -1,27 +1,55 @@
 <?xml version="1.0"?>
 <section xml:id="game-of-life_life-patterns">
   <title>Life Pattern</title>
-  <figure align="center" xml:id="gol-fig-1">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A stable pattern called a beehive.</caption>
-    <image source="GameOfLife/Figures/BEEHIVE.png" width="50%" alt="&quot; A stable pattern called a beehive.&quot;"/>
-  </figure>
-  <figure align="center" xml:id="gol-fig-2">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> An oscillator called a toad.</caption>
-    <image source="GameOfLife/Figures/TOAD.png" width="50%" alt="&quot; An oscillator called a toad.&quot;"/>
-  </figure>
-  <figure align="center" xml:id="gol-fig-3">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of An oscillator called a toad.</caption>
-    <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%" alt="&quot;Gif of An oscillator called a toad.&quot;"/>
-  </figure>
-  <figure align="center" xml:id="gol-fig-4">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A spaceship called a glider.</caption>
-    <image source="GameOfLife/Figures/GLIDER.png" width="50%" alt="&quot; A spaceship called a glider.&quot;"/>
-  </figure>
+<figure align="center" xml:id="game-of-life_beehive-figure">
+  <caption>A stable pattern called a beehive.</caption>
+  <image source="GameOfLife/Figures/BEEHIVE.png" width="50%">
+    <shortdescription>A hexagonal ring of six dark green cells forming a beehive shape on a light grid.</shortdescription>
+    <description>
+      <p>
+        The image shows a Game of Life pattern on a small grid. Six dark cells form a hexagonal ring: two cells side by side in the top row (columns 2 and 3), one cell each on the far left and far right of the middle row, and two cells side by side in the bottom row (columns 2 and 3), directly below the top pair. The center cells and all four corners of the grid are empty (light).
+      </p>
+    </description>
+  </image>
+</figure>
+<figure align="center" xml:id="game-of-life_toad-figure">
+  <caption>An oscillator called a toad.</caption>
+  <image source="GameOfLife/Figures/TOAD.png" width="50%">
+    <shortdescription>Two grids side by side showing the two alternating phases of the toad oscillator pattern.</shortdescription>
+    <description>
+      <p>
+        The image shows two small grids side by side, representing two successive time steps of a Game of Life oscillator. In the left grid, the middle row has three dark cells starting from the second column, and the row below it has three dark cells starting from the first column, together forming a staggered horizontal block. In the right grid, the pattern has shifted to a more vertical, offset arrangement: a single dark cell appears near the top, dark cells appear on the left and right edges of the middle rows, and a single dark cell appears near the bottom, giving the pattern a diamond-like silhouette. The pattern alternates between these two configurations indefinitely, which is why it is called an oscillator.
+      </p>
+    </description>
+  </image>
+</figure>
+<figure align="center" xml:id="game-of-life_toad-animation">
+  <caption>Gif of an oscillator called a toad.</caption>
+  <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%">
+    <shortdescription>An animated GIF showing the toad oscillator pattern alternating between two states.</shortdescription>
+    <description>
+      <p>
+        This animated GIF shows the toad oscillator continuously alternating between its two phases. In one phase, a horizontal block of six dark cells appears in a staggered, step-like arrangement across two rows. In the other phase, the block shifts by one cell, creating a mirrored step-like arrangement. The pattern repeats this back-and-forth shift indefinitely, illustrating the two-step oscillation described in the previous static figure.
+      </p>
+    </description>
+  </image>
+</figure>
+<figure align="center" xml:id="game-of-life_glider-figure">
+  <caption>A spaceship called a glider.</caption>
+  <image source="GameOfLife/Figures/GLIDER.png" width="50%">
+    <shortdescription>Five small grids showing the glider pattern's five-step cycle as it moves diagonally.</shortdescription>
+    <description>
+      <p>
+        The image shows five small grids arranged in a row, each representing one time step of the glider pattern. Each grid contains five dark cells forming a small, arrow-like cluster of three squares. Across the five panels, the cluster rotates through equivalent shapes while shifting diagonally, so that by the fifth panel the entire pattern has moved one cell down and one cell to the right compared to the first panel. This diagonal drift, repeating every four steps, is what makes the glider a "spaceship" — a pattern that translates across the grid over time rather than staying fixed or merely oscillating in place.
+      </p>
+    </description>
+  </image>
+</figure>
   <p>If you run GoL from a random starting state, a number of stable patterns are likely to appear. Over time, people have identified these patterns and given them names.</p>
-  <p>For example, <xref ref="gol-fig-1"/>  shows a stable pattern called a <q>beehive</q>. Every cell in the beehive has 2 or 3 neighbors, so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.</p>
-  <p>Other patterns <q>oscillate</q>; that is, they change over time but eventually return to their starting configuration (provided they don't collide with another pattern). For example, <xref ref="gol-fig-2"/> shows a pattern called a <q>toad</q>, which is an oscillator that alternates between two states. The <q>period</q> of this oscillator is 2.</p>
+  <p>For example, <xref ref="game-of-life_beehive-figure"/>  shows a stable pattern called a <q>beehive</q>. Every cell in the beehive has 2 or 3 neighbors, so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.</p>
+  <p>Other patterns <q>oscillate</q>; that is, they change over time but eventually return to their starting configuration (provided they don't collide with another pattern). For example, <xref ref="game-of-life_toad-figure"/> shows a pattern called a <q>toad</q>, which is an oscillator that alternates between two states. The <q>period</q> of this oscillator is 2.</p>
   <p>Finally, some patterns oscillate and return to the starting configuration, but shifted in space. Because these patterns seem to move, they are called <q>spaceships</q>.</p>
-  <p><xref ref="gol-fig-3"/> shows a spaceship called a <q>glider</q>. After a period of 4 steps, the glider is back in the starting configuration, shifted one unit down and to the right.</p>
+  <p><xref ref="game-of-life_glider-figure"/> shows a spaceship called a <q>glider</q>. After a period of 4 steps, the glider is back in the starting configuration, shifted one unit down and to the right.</p>
   <p>Depending on the starting orientation, gliders can move along any of the four diagonals. There are other spaceships that move horizontally and vertically.</p>
   <p>People have spent embarrassing amounts of time finding and naming these patterns. If you search the web, you will find many collections.</p>
   <exercise label="q_7_3">
