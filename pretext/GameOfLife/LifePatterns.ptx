@@ -49,7 +49,7 @@
   <p>For example, <xref ref="game-of-life_beehive-figure"/>  shows a stable pattern called a <q>beehive</q>. Every cell in the beehive has 2 or 3 neighbors, so they all survive, and none of the dead cells adjacent to the beehive has 3 neighbors, so no new cells are born.</p>
   <p>Other patterns <q>oscillate</q>; that is, they change over time but eventually return to their starting configuration (provided they don't collide with another pattern). For example, <xref ref="game-of-life_toad-figure"/> shows a pattern called a <q>toad</q>, which is an oscillator that alternates between two states. The <q>period</q> of this oscillator is 2.</p>
   <p>Finally, some patterns oscillate and return to the starting configuration, but shifted in space. Because these patterns seem to move, they are called <q>spaceships</q>.</p>
-  <p><xref ref="game-of-life_toad-animation"/> shows a spaceship called a <q>glider</q>. After a period of 4 steps, the glider is back in the starting configuration, shifted one unit down and to the right.</p>
+  <p><xref ref="game-of-life_glider-figure"/> shows a spaceship called a <q>glider</q>. After a period of 4 steps, the glider is back in the starting configuration, shifted one unit down and to the right.</p>
   <p>Depending on the starting orientation, gliders can move along any of the four diagonals. There are other spaceships that move horizontally and vertically.</p>
   <p>People have spent embarrassing amounts of time finding and naming these patterns. If you search the web, you will find many collections.</p>
   <exercise label="q_7_3">

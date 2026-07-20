@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="game-of-life_self-check">
   <title>Self Check</title>
-<figure align="center">
+<figure align="center" xml:id="game-of-life_glider-self-check-figure">
     <image source="GameOfLife/Figures/GoL_Glider_.gif" width="50%">
       <shortdescription>Five connected green cells forming an irregular blocky shape resembling the letter r, on an otherwise empty grid.</shortdescription>
       <description>
@@ -50,7 +50,7 @@
       </choice>
     </choices>
   </exercise>
-<figure align="center">
+<figure align="center" xml:id="game-of-life_glider-gun-animation">
     <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%">
       <shortdescription>Animation of Gosper's glider gun firing a diagonal trail of gliders that stretches toward the bottom right of the grid.</shortdescription>
       <description>
@@ -83,7 +83,7 @@
       </choice>
     </choices>
   </exercise>
- <figure align="center">
+ <figure align="center" xml:id="game-of-life_r-pentomino-final-figure">
     <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%">
       <shortdescription>Animation of the r-pentomino evolving from a small starting cluster into roughly twenty scattered cells over 1103 steps.</shortdescription>
       <description>
@@ -132,7 +132,7 @@
       </choice>
     </choices>
   </exercise>
- <figure align="center">
+ <figure align="center" xml:id="game-of-life_toad-self-check-figure">
     <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%">
       <shortdescription>Animation of six green cells alternating between two offset row patterns, forming an oscillator known as the toad.</shortdescription>
       <description>
