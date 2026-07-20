@@ -3,23 +3,51 @@
   <title>Conway's Conjecture</title>
   <p xml:id="game-of-life_gol-4" names="gol_4">From most initial conditions, GoL quickly reaches a stable state where the number of live cells is nearly constant (possibly with some oscillation).</p>
   <figure align="center" xml:id="ConwaysConjecture_figure_r_pentomino">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Starting and final configurations of the r-pentomino.</caption>
-    <image source="GameOfLife/Figures/PENTO.png" width="50%" alt="&quot; Starting and final configurations of the r-pentomino.&quot;"/>
+    <caption>Starting and final configurations of the r-pentomino.</caption>
+    <image source="GameOfLife/Figures/PENTO.png" width="50%">
+      <shortdescription>Left grid shows a single small starting cluster; right grid shows about twenty cells scattered irregularly across it.</shortdescription>
+      <description>
+        <p>
+          The image shows two square grids side by side. The left grid displays the initial r-pentomino configuration, which appears as a single small cluster of cells near the center, tiny relative to the size of the grid. The right grid displays the final, stable configuration reached after the r-pentomino evolves under Conway's Game of Life rules. It contains roughly twenty scattered cells distributed irregularly across the grid, with a loose concentration toward the left and middle regions and a few isolated cells near the edges. Unlike the compact and symmetric starting pattern, the final configuration has no apparent symmetry or repeating structure.
+        </p>
+      </description>
+    </image>
   </figure>
-  <figure align="center" xml:id="ConwaysConjecture_figure_r_pentomino_gif">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of  Starting and final configurations of the r-pentomino.</caption>
-    <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%" alt="&quot;Gif of  Starting and final configurations of the r-pentomino.&quot;"/>
+<figure align="center" xml:id="ConwaysConjecture_figure_r_pentomino_gif">
+    <caption>Gif of starting and final configurations of the r-pentomino.</caption>
+    <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%">
+      <shortdescription>Animation of the r-pentomino evolving from a small starting cluster into roughly twenty scattered cells over 1103 steps.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a single square grid evolving under Conway's Game of Life rules. It begins with the r-pentomino's initial configuration, a small cluster of five cells near the center of the grid. As the animation progresses through 1103 time steps, the pattern grows and shifts, briefly containing many more active cells, before settling into a final stable state. In the final frame, roughly twenty cells are scattered irregularly across the grid, mostly clustered toward the left and center, with a handful of isolated cells near the edges and corners.
+        </p>
+      </description>
+    </image>
   </figure>
   <p xml:id="gol-fig-5" names="gol_fig_5"> But there are some simple starting conditions that yield a surprising number of live cells, and take a long time to settle down. Because these patterns are so long-lived, they are called <q>Methuselahs</q>.</p>
   <p>One of the simplest Methuselahs is the r-pentomino, which has only five cells, roughly in the shape of the letter <q>r</q>. <xref ref="ConwaysConjecture_figure_r_pentomino_gif"/> shows the initial configuration of the r-pentomino and the final configuration after 1103 steps.</p>
   <p>This configuration is <q>final</q> in the sense that all remaining patterns are either stable, oscillators, or gliders that will never collide with another pattern. In total, the r-pentomino yields 6 gliders, 8 blocks, 4 blinkers, 4 beehives, 1 boat, 1 ship, and 1 loaf.</p>
-  <figure align="center" xml:id="ConwaysConjecture_figure_glider_gun">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Gosper's glider gun, which produces a stream of gliders.</caption>
-    <image source="GameOfLife/Figures/GLIDER_GUN.png" width="50%" alt="&quot; Gosper&#x2019;s glider gun, which produces a stream of gliders.&quot;"/>
+<figure align="center" xml:id="ConwaysConjecture_figure_glider_gun">
+    <caption>Gosper's glider gun, which produces a stream of gliders.</caption>
+    <image source="GameOfLife/Figures/GLIDER_GUN.png" width="50%">
+      <shortdescription>A wide rectangular grid showing a small block, a circular cluster of cells, a diagonal cluster, and another block spaced across it.</shortdescription>
+      <description>
+        <p>
+          The image shows a single wide, rectangular grid, wider than it is tall, containing Gosper's glider gun pattern. Near the left edge is a small square block of four cells. To its right is a compact, roughly circular cluster of cells resembling two interlocking rings, which is the oscillating part of the gun that periodically emits gliders. Further right is a smaller diagonal cluster of cells arranged in a jagged, staircase-like shape. Near the right edge of the grid is a second small square block of four cells, mirroring the one on the left. The overall layout is horizontally spread out, with empty space separating the distinct clusters.
+        </p>
+      </description>
+    </image>
   </figure>
-  <figure align="center" xml:id="ConwaysConjecture_figure_glider_gun_gif">
-    <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of Gosper's glider gun, which produces a stream of gliders.</caption>
-    <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%" alt="&quot;Gif of Gosper&#x2019;s glider gun, which produces a stream of gliders.&quot;"/>
+<figure align="center" xml:id="ConwaysConjecture_figure_glider_gun_gif">
+    <caption>Gif of Gosper's glider gun, which produces a stream of gliders.</caption>
+    <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%">
+      <shortdescription>Animation of Gosper's glider gun firing gliders that travel diagonally away from it across the grid.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid containing Gosper's glider gun. Near the top left is the gun itself: a small block, a circular cluster of oscillating cells, and a diagonal cluster of cells, arranged close together with a second small block off to the right. As the animation plays, the oscillating part of the gun cycles through its repeating shape, and every so often a small diagonal cluster of a few cells, a glider, breaks away from it. Each glider then travels diagonally down and to the right across the grid, moving one step further away with each repetition, while the gun itself remains fixed in place and continues producing new gliders behind it.
+        </p>
+      </description>
+    </image>
   </figure>
   <p>The existence of long-lived patterns prompted Conway to wonder if there are initial patterns that never stabilize. He conjectured that there were not, but he described two kinds of pattern that would prove him wrong, a <q>gun</q> and a <q>puffer train</q>. A gun is a stable pattern that periodically produces a spaceship &#x2014; as the stream of spaceships moves out from the source, the number of live cells grows indefinitely. A puffer train is a translating pattern that leaves live cells in its wake.</p>
   <p>It turns out that both of these patterns exist. A team led by Bill Gosper discovered the first, a glider gun now called Gosper's Gun, which is shown in <xref ref="ConwaysConjecture_figure_glider_gun_gif"/>. Gosper also discovered the first puffer train.</p>

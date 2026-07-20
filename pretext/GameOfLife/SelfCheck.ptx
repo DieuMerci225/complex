@@ -1,8 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="game-of-life_self-check">
   <title>Self Check</title>
-  <figure align="center">
-    <image source="GameOfLife/Figures/GoL_Glider_.gif" width="50%"/>
+<figure align="center">
+    <caption>The r-pentomino starting pattern.</caption>
+    <image source="GameOfLife/Figures/GoL_Glider_.gif" width="50%">
+      <shortdescription>Five connected green cells forming an irregular blocky shape resembling the letter r, on an otherwise empty grid.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid containing five green cells arranged in a compact, blocky shape near the upper-left area of the grid. The shape consists of a small square cell attached to the left side of a taller, two-cell-wide column, giving it an irregular, angular outline reminiscent of the letter r. This is the r-pentomino, a five-cell starting pattern. As the animation plays, the cells shift and multiply according to Conway's Game of Life rules, spreading outward from this initial compact form.
+        </p>
+      </description>
+    </image>
   </figure>
   <exercise label="SC_1">
     <statement>
@@ -43,8 +51,16 @@
       </choice>
     </choices>
   </exercise>
-  <figure align="center">
-    <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%"/>
+<figure align="center">
+    <caption>Gosper's glider gun firing a stream of gliders.</caption>
+    <image source="GameOfLife/Figures/GoL_Glider_Gun.gif" width="50%">
+      <shortdescription>Animation of Gosper's glider gun firing a diagonal trail of gliders that stretches toward the bottom right of the grid.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid containing Gosper's glider gun. Near the top left is the gun itself: a small block, a circular cluster of oscillating cells, a diagonal cluster of cells, and a second small block just to the right. Trailing diagonally down and to the right from the gun is a series of small four-cell gliders, each one further along than the last, forming a staircase pattern that extends toward the bottom-right corner of the grid. As the animation plays, the gun continues cycling and releasing new gliders from the top left, while the existing gliders continue moving diagonally away, maintaining even spacing between them as they travel.
+        </p>
+      </description>
+    </image>
   </figure>
   <exercise label="SC_2">
     <statement>
@@ -69,8 +85,16 @@
       </choice>
     </choices>
   </exercise>
-  <figure align="center">
-    <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%"/>
+ <figure align="center">
+    <caption>The r-pentomino's final, stable configuration after 1103 steps.</caption>
+    <image source="GameOfLife/Figures/GoL_R_Pentomino.gif" width="50%">
+      <shortdescription>Animation of the r-pentomino evolving from a small starting cluster into roughly twenty scattered cells over 1103 steps.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a single square grid evolving under Conway's Game of Life rules. It begins with the r-pentomino's initial configuration, a small cluster of five cells near the center of the grid. As the animation progresses through 1103 time steps, the pattern grows and shifts, briefly containing many more active cells, before settling into a final stable state. In the final frame, roughly twenty cells are scattered irregularly across the grid, mostly clustered toward the left and center, with a handful of isolated cells near the edges and corners.
+        </p>
+      </description>
+    </image>
   </figure>
   <exercise label="SC_3">
     <statement>
@@ -111,10 +135,17 @@
       </choice>
     </choices>
   </exercise>
-  <figure align="center">
-    <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%"/>
+ <figure align="center">
+    <caption>The toad oscillator pattern.</caption>
+    <image source="GameOfLife/Figures/GoL_Toad.gif" width="50%">
+      <shortdescription>Animation of six green cells alternating between two offset row patterns, forming an oscillator known as the toad.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid containing the toad oscillator pattern. In the frame shown, six cells form two overlapping rows near the middle of the grid: a horizontal group of three cells in one row, offset to the right, and another horizontal group of three cells in the row below, offset to the left, giving the overall shape a staggered, brick-like appearance with one cell sitting alone at the top and one at the bottom. As the animation plays, the pattern alternates between this configuration and a second one rotated 90 degrees, repeating this two-step cycle indefinitely without moving or growing.
+        </p>
+      </description>
+    </image>
   </figure>
-
   <exercise>
     <statement>
       <p>Fill in the blank with the correct Game of Life pattern:  </p>
