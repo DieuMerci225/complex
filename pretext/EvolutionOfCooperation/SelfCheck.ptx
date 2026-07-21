@@ -3,28 +3,28 @@
   <title>Self Check</title>
   <exercise>
     <statement>
-      <p><BlankNode/> <var/> is the tendency of many animals to help other animals, even to their own detriment. This creates a conflict with <BlankNode/><var/>, where it suggests that animals live in a state of constant competition.    </p>
+      <p> <var/> is the tendency of many animals to help other animals, even to their own detriment. This creates a conflict with <BlankNode/><var/>, where it suggests that animals live in a state of constant competition.    </p>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Aa]ltruism\s*$">
-          <feedback>
+        <condition string="^\s*[Aa][Ll][Tt][Rr][Uu][Ii][Ss][Mm]\s*$">          
+        <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="(?i)^\s*x\s*$">
           <feedback>
             <p>Incorrect, please try again.</p>
           </feedback>
         </condition>
       </var>
       <var>
-        <condition string="^\s*[Nn]atural\s+[Ss]election\s*$">
+        <condition string="^\s*[Nn][Aa][Tt][Uu][Rr][Aa][Ll]\s+[Ss][Ee][Ll][Ee][Cc][Tt][Ii][Oo][Nn]\s*$">
           <feedback>
             <p>Correct!</p>
           </feedback>
         </condition>
-        <condition string="^\s*x\s*$">
+        <condition string="(?i)^\s*x\s*$">
           <feedback>
             <p>Incorrect, please try again.</p>
           </feedback>
