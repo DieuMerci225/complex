@@ -150,7 +150,7 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*[Tt]oad\s*$">
+        <condition string="^\s*[Tt][Oo][Aa][Dd]\s*$" case="insensitive">
           <feedback>
             <p>Correct.</p>
           </feedback>
