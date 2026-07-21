@@ -45,7 +45,7 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*random\s+walk\s*$">
+        <condition string="^\s*[Rr][Aa][Nn][Dd][Oo][Mm]\s+[Ww][Aa][Ll][Kk]\s*$" case="insensitive">
           <feedback>
             <p>Correct</p>
           </feedback>
