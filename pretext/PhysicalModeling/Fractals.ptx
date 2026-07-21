@@ -5,9 +5,16 @@
   <p>For simple geometric objects, dimension is defined in terms of scaling behavior. For example, if the side of a square has length <m>l</m>, its area is <m>l^2</m>. The exponent, 2, indicates that a square is two-dimensional. Similarly, if the side of a cube has length <m>l</m>, its volume is <m>l^3</m>, which indicates that a cube is three-dimensional.</p>
   <p>More generally, we can estimate the dimension of an object by measuring some kind of size (like area or volume) as a function of some kind of linear measure (like the length of a side).</p>
   <p>As an example, We'll estimate the dimension of a 1-D cellular automaton by measuring its area (total number of <q>on</q> cells) as a function of the number of rows.</p>
-  <figure align="center" xml:id="physical-modeling_figure_one_dimensional_cas">
+<figure align="center" xml:id="physical-modeling_figure_one_dimensional_cas">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.</caption>
-    <image source="PhysicalModeling/Figures/1D_CA.png" width="50%" alt="&quot; One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.&quot;"/>
+    <image source="PhysicalModeling/Figures/1D_CA.png" width="50%" alt="&quot; One-dimensional CAs with rules 20, 50, and 18, after 32 time steps.&quot;">
+      <shortdescription>Three rectangular grids showing different one-dimensional cellular automaton patterns: a single diagonal line, a solid triangle, and a triangular fractal pattern made of smaller triangles.</shortdescription>
+      <description>
+        <p>
+          The image shows three rectangular grids side by side, each illustrating a one-dimensional cellular automaton after 32 time steps, with each row representing one time step growing downward from a single starting cell at the top. The first grid, for rule 20, shows a single thin diagonal line of shaded cells running from the top center down to the bottom right corner, with the rest of the grid empty. The second grid, for rule 50, shows a solid, evenly shaded triangle expanding outward from the top center, with straight diagonal edges and no gaps or texture inside. The third grid, for rule 18, shows a triangular region of similar overall size, but filled with a self-similar fractal pattern of small nested triangles, giving it a lace-like or Sierpinski-triangle-style texture rather than a solid fill.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="physical-modeling_figure_one_dimensional_cas"/> shows three 1-D CAs like the ones we saw in <xref ref="cellular-automatons_a-simple-ca"/>. Rule 20 (left) generates a set of cells that seems like a line, so we expect it to be one-dimensional. Rule 50 (center) produces something like a triangle, so we expect it to be 2-D. Rule 18 (right) also produces something like a triangle, but the density is not uniform, so its scaling behavior is not obvious.</p>
   <p>We'll estimate the dimension of these CAs with the following function, which counts the number of on cells after each time step. It returns a list of tuples, where each tuple contains <c>i</c>, <c>i**2</c>, and the total number of cells.</p>
@@ -22,9 +29,16 @@
         ca.step()
 
     return res</pre>
-  <figure align="center" xml:id="physical-modeling_graph_number_of_on_cells">
+<figure align="center" xml:id="physical-modeling_graph_number_of_on_cells">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Number of <q>on</q> cells versus number of time steps for rules 20, 50, and 18.</caption>
-    <image source="PhysicalModeling/Figures/NUM_ON_CELL.png" width="50%" alt="&quot; Number of &#x201C;on&#x201D; cells versus number of time steps for rules 20, 50, and 18.&quot;"/>
+    <image source="PhysicalModeling/Figures/NUM_ON_CELL.png" width="50%" alt="&quot; Number of &#x201C;on&#x201D; cells versus number of time steps for rules 20, 50, and 18.&quot;">
+      <shortdescription>Three log-log plots comparing the growth in number of "on" cells over time for rules 20, 50, and 18, each shown alongside reference lines for one-dimensional (d=1) and two-dimensional (d=2) growth.</shortdescription>
+      <description>
+        <p>
+          The image shows three log-log line plots side by side, each with time steps on the horizontal axis and number of cells on the vertical axis, both ranging over several orders of magnitude. Every panel includes the same two dashed reference lines: a steeper dashed line labeled d=2 and a shallower dashed line labeled d=1. In the first panel, for rule 20, the solid line tracks very closely alongside the shallower d=1 reference line, indicating the number of "on" cells grows in direct proportion to the number of time steps. In the second panel, for rule 50, the solid line instead tracks closely alongside the steeper d=2 reference line, indicating the number of "on" cells grows roughly with the square of the number of time steps. In the third panel, for rule 18, the solid line starts out close to the d=1 line at early time steps but gradually curves upward over time, ending up between the d=1 and d=2 reference lines, indicating a growth rate faster than linear but slower than quadratic.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="physical-modeling_graph_number_of_on_cells"/> shows the results plotted on a log-log scale.</p>
   <p>In each figure, the top dashed line shows <m>y = i^2</m>. Taking the log of both sides, we have <m>\log y = 2 \log i</m>. Since the figure is on a log-log scale, the slope of this line is 2.</p>

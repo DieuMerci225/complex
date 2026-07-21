@@ -72,21 +72,42 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
       </choice>
     </choices>
   </exercise>
-  <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-1">
+<figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+      <shortdescription>Three square panels showing blue ring and speckle patterns on a pink background, evolving from concentric rings into a fine speckled texture.</shortdescription>
+      <description>
+        <p>
+          The image shows three square panels side by side, illustrating a reaction-diffusion model at three different time steps. The first panel, after 1000 steps, shows a pink background with concentric blue rings radiating outward from the center, resembling a target or tree-ring pattern. The second panel, after 2000 steps, shows the rings have become more irregular and wavy, breaking into wrinkled, maze-like blue bands that fill the frame. The third panel, after 4000 steps, shows the pattern has evolved further into a fine, uniform texture of small rounded blue speckles covering the entire panel, with the earlier ring and wave structure no longer visible.
+        </p>
+      </description>
+    </image>
   </figure>
   <p>With different parameters, this model can produce patterns similar to the stripes and spots on a variety of animals. In some cases, the similarity is striking, especially when the feed and kill parameters vary in space.</p>
   <p>For all simulations in this section, <c>ra=0.5</c> and <c>rb=0.25</c>.</p>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-1"/> shows results with <c>f=0.035</c> and <c>k=0.057</c>, with the concentration of <c>B</c> shown in darker colors. With these parameters, the system evolves toward a stable configuration with light spots of <c>A</c> on a dark background of <c>B</c>.</p>
-  <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-2">
+<figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.055 and k=0.062 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/CORAL.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <image source="PhysicalModeling/Figures/CORAL.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+      <shortdescription>Three square panels showing blue coral-like patterns on a pink background, growing from a small blob into a dense, maze-like network filling the frame.</shortdescription>
+      <description>
+        <p>
+          The image shows three square panels side by side, illustrating a reaction-diffusion model at three different time steps. The first panel, after 1000 steps, shows a pink background with a single small, irregular blue blob near the center, shaped somewhat like a rounded heart or blob with a dimpled top. The second panel, after 2000 steps, shows the blob has grown and branched outward into a larger, coral-like or brain-like shape with winding, folded blue ridges covering roughly a third of the panel. The third panel, after 4000 steps, shows the blue pattern has expanded to fill the entire panel with a dense, interconnected maze of winding coral-like ridges, leaving only thin traces of the pink background visible between them.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-2"/> shows results with <c>f=0.055</c> and <c>k=0.062</c>, which yields a coral-like pattern of <c>B</c> on a background of <c>A</c>.</p>
-  <figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-3">
+<figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-3">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A reaction-diffusion model with parameters f=0.039 and k=0.065 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/ANIMAL_SPOT.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <image source="PhysicalModeling/Figures/ANIMAL_SPOT.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+      <shortdescription>Three square panels showing small blue dots on a pink background, increasing in number from a handful of scattered spots to dozens covering the panel.</shortdescription>
+      <description>
+        <p>
+          The image shows three square panels side by side, illustrating a reaction-diffusion model at three different time steps. The first panel, after 1000 steps, shows a pink background with about four small, round blue dots loosely clustered near the center. The second panel, after 2000 steps, shows about sixteen similar blue dots scattered more broadly across the panel, still leaving visible pink background between them. The third panel, after 4000 steps, shows the blue dots have multiplied further to cover most of the panel in a dense, evenly spaced pattern resembling animal-coat spots, with only small patches of pink background remaining between the dots.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="physical-modeling_reaction-diffusion-figure-3"/> shows results with <c>f=0.039</c> and <c>k=0.065</c>. These parameters produce spots of <c>B</c> that grow and divide in a process that resembles mitosis, ending with a stable pattern of equally-spaced spots.</p>
   <p>Since 1952, observations and experiments have provided some support for Turing's conjecture. At this point it seems likely, but not yet proven, that many animal patterns are actually formed by reaction-diffusion processes of some kind.</p>
