@@ -56,7 +56,7 @@ b = table[c]</pre>
     </statement>
     <setup>
       <var>
-        <condition string="^\s*for\s+loops\s*$">
+        <condition string="^\s*[Ff][Oo][Rr]\s+[Ll][Oo][Oo][Pp][Ss]\s*$" case="insensitive">
           <feedback>
             <p>Correct!</p>
           </feedback>
