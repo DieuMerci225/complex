@@ -69,14 +69,28 @@
    c = correlate2d(a, self.kernel, mode='same')
    self.array[(a==1) &amp; (c&gt;=5)] = 5</pre>
   <p>This function identifies porous cells, where <c>a==1</c>, that have at least one wet neighbor, where <c>c&gt;=5</c>, and sets their state to 5, which indicates that they are wet.</p>
-  <figure align="center" xml:id="pm-fig-5">
+<figure align="center" xml:id="pm-fig-5">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> The first three steps of a percolation model with n=10 and p=0.7.</caption>
-    <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <image source="PhysicalModeling/Figures/3STEP_PERC.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+      <shortdescription>Three square grids showing a blue-gray band across the top eroding downward in a jagged pattern, with the rest of the grid in light blue and white cells below.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids side by side, illustrating the first three steps of a percolation model. In the first panel, a solid blue-gray band fills roughly the top fifth of the grid with a fairly even, straight lower edge, while the remainder of the grid below is a mix of light blue and white cells in an irregular, mottled pattern. In the second panel, the top blue-gray band has become more jagged and uneven, with narrow fingers extending a bit further downward into the grid below. In the third panel, the blue-gray band's lower edge is even more jagged, with a few narrow fingers reaching noticeably deeper into the grid than in the previous panel, while the overall extent of the band remains concentrated near the top.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="pm-fig-5"/> shows the first few steps of a percolation model with <c>n=10</c> and <c>p=0.7</c>. Non-porous cells are white, porous cells are lightly shaded, and wet cells are dark.</p>
-  <figure align="center" xml:id="Percolation_figure_2">
+<figure align="center" xml:id="Percolation_figure_2">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of how liquid interacts with porous and non-porous cells.</caption>
-    <image source="PhysicalModeling/Figures/Percolation.gif" width="50%" alt="&quot;Gif of how liquid interacts with porous and non-porous cells.&quot;"/>
+    <image source="PhysicalModeling/Figures/Percolation.gif" width="50%" alt="&quot;Gif of how liquid interacts with porous and non-porous cells.&quot;">
+      <shortdescription>An animated grid showing dark blue liquid seeping downward through a grid of light-colored porous cells, with lighter blue trailing behind as it soaks in.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a square grid where dark blue liquid starts near the top and gradually seeps downward through the grid over time. Early on, only a small, shallow, jagged band of dark blue liquid sits at the very top of the grid, with a few small notches dipping slightly into the row below. As the animation continues, the dark blue liquid pushes further down in an irregular, finger-like pattern, with some columns letting the liquid through much deeper than others, forming tall narrow streaks reaching toward the middle and lower rows of the grid. Cells that the liquid has already passed through and soaked into are shown in a lighter, pale blue, forming a growing pool near the bottom of the grid beneath the actively advancing dark blue front, illustrating how the liquid percolates unevenly depending on which cells are porous and which act as barriers.
+        </p>
+      </description>
+    </image>
   </figure>
   <exercise label="q_8_4_2">
     <statement>

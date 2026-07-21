@@ -13,9 +13,16 @@
   <pre>c = correlate2d(array, kernel, mode='same')</pre>
   <p>We'll use a diffusion constant, <c>r</c>, that relates the difference in concentration to the rate of flow:</p>
   <pre>array += r * c</pre>
-  <figure align="center" xml:id="physical-modeling_diffusion-figure">
+<figure align="center" xml:id="physical-modeling_diffusion-figure">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> A simple diffusion model after 0, 5, and 10 steps.</caption>
-    <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%" alt="&quot; A simple diffusion model after 0, 5, and 10 steps.&quot;"/>
+    <image source="PhysicalModeling/Figures/SIMPLE_DIF.png" width="50%" alt="&quot; A simple diffusion model after 0, 5, and 10 steps.&quot;">
+      <shortdescription>Three square panels showing a dark red square gradually blurring and spreading outward into a softer, lighter diffuse shape.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids side by side, illustrating a simple diffusion model at three different time steps. The first panel, after 0 steps, shows a solid dark red square centered on a light pink background with sharp, well-defined edges. The second panel, after 5 steps, shows the color has spread outward and softened into a blurred red blob, brightest at the center and fading gradually toward the edges. The third panel, after 10 steps, shows the color spread even further into a larger, lighter, and more diffuse orange-pink blob covering most of the grid, with the sharp central intensity from the first panel now smoothed out.
+        </p>
+      </description>
+    </image>
   </figure>
   <p><xref ref="physical-modeling_diffusion-figure"/> shows results for a CA with size <c>n=9</c>, diffusion constant <c>r=0.1</c>, and initial concentration 0 everywhere except for an <q>island</q> in the middle. The figure shows the starting configuration and the state of the CA after 5 and 10 steps. The chemical spreads from the center outward, continuing until the concentration is the same everywhere.</p>
   <exercise label="q_8_2">
