@@ -59,7 +59,7 @@
     </statement>
     <setup>
       <var>
-        <condition string="^\s*gun\s*$">
+        <condition string="^\s*[Gg][Uu][Nn]\s*$" case="insensitive">
           <feedback>
             <p>Correct, it is a stable pattern that periodically produces a spaceship.</p>
           </feedback>
@@ -91,7 +91,7 @@
         </condition>
       </var>
       <var>
-        <condition string="^\s*puffer\s+train\s*$">
+        <condition string="^\s*[Pp][Uu][Ff][Ff][Ee][Rr]\s+[Tt][Rr][Aa][Ii][Nn]\s*$" case="insensitive">
           <feedback>
             <p>Correct, it is a translating pattern that leaves live cells in its wake.</p>
           </feedback>
