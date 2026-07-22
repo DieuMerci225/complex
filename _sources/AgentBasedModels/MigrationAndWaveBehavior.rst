@@ -28,6 +28,6 @@ These waves move diagonally, which is surprising because the agents themselves o
 
 .. figure:: Figures/Sugarscape_Wave_Behavior_.gif
     :align: center
-    :alt: "Gis 11.2: Wave behavior in a sugarscape."
+    :alt: "Gif of wave behavior in a sugarscape."
 
-    Gif 11.2: Wave behavior in a Sugarscape.
+    Gif of wave behavior in a Sugarscape.
