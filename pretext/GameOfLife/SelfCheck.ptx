@@ -144,8 +144,7 @@
   </figure>
   <exercise>
     <statement>
-      <p>Fill in the blank with the correct Game of Life pattern:  </p>
-
+      <p>Fill in the blank with the correct Game of Life pattern shown in <xref ref="game-of-life_toad-self-check-figure"/>:  </p>
       <p>A <BlankNode/><var/> is a pattern that oscillates and alternates between two states.</p>
     </statement>
     <setup>
