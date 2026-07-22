@@ -72,9 +72,9 @@ self.array2 += rb * cB + reaction - (f+k) * B</pre>
       </choice>
     </choices>
   </exercise>
-<figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-1">
+<figure align="center" xml:id="physical-modeling_reaction-diffusion-figure-rings-to-speckles">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.</caption>
-    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+    <image source="PhysicalModeling/Figures/LIGHT_SPT_DARK_BACK.png" width="50%" alt="&quot;Reaction-diffusion model with parameters f=0.035 and k=0.057 after 1000, 2000, and 4000 steps.&quot;">
       <shortdescription>Three square panels showing blue ring and speckle patterns on a pink background, evolving from concentric rings into a fine speckled texture.</shortdescription>
       <description>
         <p>
