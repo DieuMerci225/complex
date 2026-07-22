@@ -66,13 +66,27 @@ pile.array[1, 3] = 4</pre>
   <p>Let's look at a bigger example, with <c>n=20</c>:</p>
   <pre>pile = SandPile(n=20, level=10)
 pile.run()</pre>
-  <figure align="center" xml:id="sco-fig-1">
+<figure align="center" xml:id="sco-fig-1">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/">Gif of a sand pile running for 100 steps.</caption>
-    <image source="SelfOrganizedCriticality/Figures/Sand_pile_3.gif" width="50%" alt="&quot;Gif of a sand pile running for 100 steps.&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/Sand_pile_3.gif" width="50%" alt="&quot;Gif of a sand pile running for 100 steps.&quot;">
+      <shortdescription>An animated grid of small squares in shades of orange, peach, and cream, forming a mosaic-like pattern where individual cells continually change color as the sand pile model runs.</shortdescription>
+      <description>
+        <p>
+          The image is an animated GIF showing a grid of small square cells, each colored in one of a few shades ranging from pale cream through light peach to a deeper coral-orange, forming a mottled, mosaic-like pattern with no single large region of uniform color. As the animation plays through 100 steps, individual cells across the grid continually change color from frame to frame, representing sand grains being added and toppling between neighboring cells. Despite this constant cell-by-cell flickering, the overall texture and density of colors in the grid looks similar throughout the animation, rather than settling into a final fixed picture or visibly growing, shrinking, or forming large new shapes.
+        </p>
+      </description>
+    </image>
   </figure>
-  <figure align="center" xml:id="ImplementingTheSandPile_figure_2">
+<figure align="center" xml:id="sco-fig-sand-pile-progression">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).</caption>
-    <image source="SelfOrganizedCriticality/Figures/SP_MODEL.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/SP_MODEL.png" width="50%" alt="&quot; Sand pile model initial state (left), after 200 steps (middle), and 400 steps (right).&quot;">
+      <shortdescription>Three square grids showing a mosaic of orange, peach, and cream cells, becoming lighter and more evenly speckled from left to right as the sand pile model progresses.</shortdescription>
+      <description>
+        <p>
+          The image shows three square grids side by side, illustrating a sand pile model at three different time steps. The first panel, the initial state, shows a grid dominated by darker orange and coral-colored cells, with only a scattering of lighter cream and pale peach cells mixed in. The second panel, after 200 steps, shows a noticeably lighter and more varied mix of cream, pale peach, and orange cells spread more evenly across the grid, with smaller and more numerous patches than in the first panel. The third panel, after 400 steps, shows an even finer, more evenly speckled mosaic of cream, light peach, and orange cells, with no large uniform patches remaining, giving it a more uniformly textured appearance than the previous two panels.
+        </p>
+      </description>
+    </image>
   </figure>
   <p>With an initial level of 10, this sand pile takes 332 time steps to reach equilibrium, with a total of 53,336 topplings. <xref ref="sco-fig-1"/> (left) shows the configuration after this initial run. Notice that it has the repeating elements that are characteristic of fractals. We'll come back to that soon.</p>
   <p><xref ref="sco-fig-1"/> (middle) shows the configuration of the sand pile after dropping 200 grains onto random cells, each time running until the pile reaches equilibrium. The symmetry of the initial configuration has been broken; the configuration looks random.</p>
