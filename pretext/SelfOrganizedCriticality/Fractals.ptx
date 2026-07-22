@@ -16,11 +16,18 @@ pile3.run()</pre>
         viewer.draw_array(a==level, vmax=1)</pre>
   <p><c>draw_four</c> takes a <c>SandPileViewer</c> object, which is defined in <c>Sand.py</c> in the repository for this book. The parameter <c>levels</c> is the list of levels we want to plot; the default is the range 0 through 3. If the sand pile has run until equilibrium, these are the only levels that should exist.</p>
   <p>Inside the loop, it uses <c>a==level</c> to make a boolean array that's <c>True</c> where the array is <c>level</c> and <c>False</c> otherwise. <c>draw_array</c> treats these booleans as 1s and 0s.</p>
-  <figure align="center" xml:id="soc-fig-4">
+<figure align="center" xml:id="soc-fig-sand-pile-equilibrium-levels">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.</caption>
-    <image source="SelfOrganizedCriticality/Figures/SP_EQUILIBRIUM.png" width="50%" alt="&quot; Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/SP_EQUILIBRIUM.png" width="50%" alt="&quot; Sand pile model in equilibrium, selecting cells with levels 0, 1, 2, and 3, left to right, top to bottom.&quot;">
+      <shortdescription>Four square panels showing intricate, symmetric fractal-like patterns in maroon on a cream background, each highlighting cells at a different sand pile level, from sparse to dense.</shortdescription>
+      <description>
+        <p>
+          The image shows four square panels arranged in a two-by-two grid, each highlighting the cells at a different sand pile level once the model has reached equilibrium. The top-left panel, level 0, shows a cream background with a sparse, lace-like pattern of small maroon marks radiating outward in a roughly symmetric, snowflake-like arrangement, densest near the center and corners. The top-right panel, level 1, shows a similar cream background with maroon marks arranged in a different but equally intricate symmetric pattern, with a distinct cross or star shape visible near the center. The bottom-left panel, level 2, shows a denser maroon pattern covering more of the cream background, still highly symmetric with radiating fractal-like detail throughout. The bottom-right panel, level 3, shows the densest maroon pattern of the four, with the cream background reduced to small scattered gaps, though the same underlying symmetric, radiating structure remains visible.
+        </p>
+      </description>
+    </image>
   </figure>
-  <p><xref ref="soc-fig-4"/> shows the results for <c>pile3</c>. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using box-counting, as we saw in <xref ref="physical-modeling_fractals"/>.</p>
+  <p><xref ref="soc-fig-sand-pile-equilibrium-levels"/> shows the results for <c>pile3</c>. Visually, these patterns resemble fractals, but looks can be deceiving. To be more confident, we can estimate the fractal dimension for each pattern using box-counting, as we saw in <xref ref="physical-modeling_fractals"/>.</p>
   <p>We'll count the number of cells in a small box at the center of the pile, then see how the number of cells increases as the box gets bigger. Here's an implementation:</p>
   <pre>def count_cells(a):
 n, m = a.shape
@@ -47,11 +54,18 @@ steps, steps2, cells = res</pre>
   <pre>thinkplot.plot(steps, steps2, linestyle='dashed')
 thinkplot.plot(steps, cells)
 thinkplot.plot(steps, steps, linestyle='dashed')</pre>
-  <figure align="center" xml:id="soc-fig-5">
+<figure align="center" xml:id="soc-fig-box-counts-by-level">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.</caption>
-    <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%" alt="&quot; Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/BOX_COUNTS.png" width="50%" alt="&quot; Box counts for cells with levels 0, 1, 2, and 3, compared to dashed lines with slopes 1 and 2.&quot;">
+      <shortdescription>Four log-log plots showing cell count versus box size for sand pile levels 0 through 3, each with a solid data line running between two dashed reference lines of slopes 1 and 2.</shortdescription>
+      <description>
+        <p>
+          The image shows four log-log plots arranged in a two-by-two grid, each showing cell count on the vertical axis versus box size on the horizontal axis for a different sand pile level. In each panel, two dashed reference lines are shown, a steeper one and a shallower one, corresponding to slopes of 2 and 1. The top-left panel, level 0, shows a solid data line that starts below the two dashed lines at small box sizes, then rises to track roughly midway between them at larger box sizes. The top-right panel, level 1, shows a solid data line that appears only over a narrower middle range of box sizes, running roughly parallel to and between the two dashed lines. The bottom-left panel, level 2, shows a solid data line spanning nearly the full range of box sizes, staying close to the shallower slope-1 dashed line for smaller sizes before curving up toward the steeper slope-2 line at larger sizes. The bottom-right panel, level 3, shows a solid data line covering a narrower range than level 2, generally tracking below and roughly parallel to the slope-2 dashed line.
+        </p>
+      </description>
+    </image>
   </figure>
-  <p><xref ref="soc-fig-5"/> shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.</p>
+  <p><xref ref="soc-fig-box-counts-by-level"/> shows the results. On a log-log scale, the cell counts form nearly straight lines, which indicates that we are measuring fractal dimension over a valid range of box sizes.</p>
   <p>To estimate the slopes of these lines, we can use the SciPy function <c>linregress</c>, which fits a line to the data by linear regression.</p>
   <pre>from scipy.stats import linregress
 

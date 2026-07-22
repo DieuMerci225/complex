@@ -17,16 +17,30 @@ S = S[S&gt;0]</pre>
   <p>The distributions of <c>T</c> and <c>S</c> have many small values and a few very large ones. We will use the <c>Pmf</c> class to make a PMF of the values, that is, a map from each value to its probability of occurring (see <xref ref="scale-free-networks_heavy-tailed-distributions"/>).</p>
   <pre>pmfT = Pmf(T)
 pmfS = Pmf(S)</pre>
-  <figure align="center" xml:id="soc-fig-2">
+ <figure align="center" xml:id="soc-fig-avalanche-duration-size-linear">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Distribution of avalanche duration (left) and size (right), linear scale.</caption>
-    <image source="SelfOrganizedCriticality/Figures/LINEAR_DIST_AVA.png" width="50%" alt="&quot; Distribution of avalanche duration (left) and size (right), linear scale.&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/LINEAR_DIST_AVA.png" width="50%" alt="&quot; Distribution of avalanche duration (left) and size (right), linear scale.&quot;">
+      <shortdescription>Two line plots on linear axes showing probability mass function versus avalanche duration and avalanche size, both dropping sharply near zero and leveling off close to zero for larger values.</shortdescription>
+      <description>
+        <p>
+          The image shows two line plots side by side, both on linear scales. The left plot shows the probability mass function of avalanche duration, with duration on the horizontal axis ranging from 0 to 50 and probability on the vertical axis ranging from 0 to about 0.12. The curve starts very high near a duration of 0, drops sharply within the first few units, and then levels off into a long, nearly flat tail close to zero probability as duration increases toward 50. The right plot shows the probability mass function of avalanche size, with size on the horizontal axis also ranging from 0 to 50, following a nearly identical shape: a sharp initial spike near size 0, followed by a rapid drop and a long, flat, low tail extending out to larger sizes.
+        </p>
+      </description>
+    </image>
   </figure>
-  <figure align="center" xml:id="soc-fig-3">
+ <figure align="center" xml:id="soc-fig-avalanche-duration-size-loglog">
     <caption xmlns:c="https://www.sphinx-doc.org/" xmlns:changeset="https://www.sphinx-doc.org/" xmlns:citation="https://www.sphinx-doc.org/" xmlns:cpp="https://www.sphinx-doc.org/" xmlns:index="https://www.sphinx-doc.org/" xmlns:js="https://www.sphinx-doc.org/" xmlns:math="https://www.sphinx-doc.org/" xmlns:py="https://www.sphinx-doc.org/" xmlns:rst="https://www.sphinx-doc.org/" xmlns:std="https://www.sphinx-doc.org/"> Distribution of avalanche duration (left) and size (right), self-organized-criticality_log-log scale.</caption>
-    <image source="SelfOrganizedCriticality/Figures/LOGLOG_DIST_AVA.png" width="50%" alt="&quot; Distribution of avalanche duration (left) and size (right), self-organized-criticality_log-log scale.&quot;"/>
+    <image source="SelfOrganizedCriticality/Figures/LOGLOG_DIST_AVA.png" width="50%" alt="&quot; Distribution of avalanche duration (left) and size (right), self-organized-criticality_log-log scale.&quot;">
+      <shortdescription>Two log-log plots showing probability mass function versus avalanche duration and avalanche size, each roughly following a straight downward diagonal line indicative of a power-law relationship.</shortdescription>
+      <description>
+        <p>
+          The image shows two line plots side by side, both on log-log scales. The left plot shows the probability mass function of avalanche duration, with duration on the horizontal axis ranging from 10^0 to about 10^2 and probability on the vertical axis ranging from about 10^-4 to 10^-1. The data points closely follow a straight diagonal reference line sloping downward from upper left to lower right across most of the range, before dropping off more steeply at the largest duration values. The right plot shows the probability mass function of avalanche size, with size on the horizontal axis also ranging from 10^0 to about 10^2, following a similar straight diagonal line across nearly the entire range, though with more visible jaggedness and scatter in the data compared to the duration plot.
+        </p>
+      </description>
+    </image>
   </figure>
-  <p><xref ref="soc-fig-2"/> shows the results for values less than 50.</p>
-  <p>As we saw in <xref ref="scale-free-networks_heavy-tailed-distributions"/>, we can get a clearer picture of these distributions by plotting them on a self-organized-criticality_log-log scale, as shown in <xref ref="soc-fig-3"/>.</p>
+  <p><xref ref="soc-fig-avalanche-duration-size-linear"/> shows the results for values less than 50.</p>
+  <p>As we saw in <xref ref="scale-free-networks_heavy-tailed-distributions"/>, we can get a clearer picture of these distributions by plotting them on a self-organized-criticality_log-log scale, as shown in <xref ref="soc-fig-avalanche-duration-size-loglog"/>.</p>
   <p>For values between 1 and 100, the distributions are nearly straight on a self-organized-criticality_log-log scale, which is characteristic of a heavy tail. The gray lines in the figure have slopes near -1, which suggests that these distributions follow a power law with parameters near <m>&#x3B1;=1</m>.</p>
   <p>For values greater than 100, the distributions fall away more quickly than the power law model, which means there are fewer very large values than the model predicts. One possibility is that this effect is due to the finite size of the sand pile; if so, we might expect larger piles to fit the power law better.</p>
   <p>Another possibility, which you can explore in one of the exercises at the end of this chapter, is that these distributions do not strictly obey a power law. But even if they are not power-law distributions, they might still be heavy-tailed.</p>
