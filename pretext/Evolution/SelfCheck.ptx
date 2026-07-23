@@ -6,7 +6,7 @@
       <p>The theory of evolution is powerful because it explains <var/>, <var/>, and <var/> which are phenomena seen in the natural world that seem inexplicable initially.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*adaptation\s*$">
           <feedback>
             <p>Correct</p>
@@ -18,7 +18,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*increasing\s+diversity\s*$">
           <feedback>
             <p>Correct</p>
@@ -30,7 +30,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*increasing\s+complexity\s*$">
           <feedback>
             <p>Correct</p>
