@@ -49,7 +49,7 @@
       <p>To quantify the dispersion of a population, we can compute the mean of the distances between <var/>  of <var/>.</p>
     </statement>
     <setup>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*pairs\s*$">
           <feedback>
             <p>Correct.</p>
@@ -61,7 +61,7 @@
           </feedback>
         </condition>
       </var>
-      <var>
+      <var case="insensitive">
         <condition string="^\s*agents\s*$">
           <feedback>
             <p>Correct.</p>
